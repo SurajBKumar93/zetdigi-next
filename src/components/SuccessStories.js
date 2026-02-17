@@ -53,7 +53,7 @@ export default function SuccessStories() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentStatSlide((prev) => (prev + 1) % statisticsSlides.length);
-    }, 6000);
+    }, 2000);
     return () => clearInterval(timer);
   }, [statisticsSlides.length]);
 
