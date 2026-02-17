@@ -8,17 +8,42 @@ export default function SuccessStories() {
 
   const statisticsSlides = [
     {
-      image: '/uploads/success-stories/1771241369428-Marketing-Insights-001.png',
+      image: '/uploads/success-stories/Marketing Insights 2.png',
       alt: 'PPC Automation Results - AI Optimized',
       title: 'Campaign Performance'
     },
     {
-      image: '/uploads/success-stories/1771241393952-Marketing-Insights-002.png',
+      image: '/uploads/success-stories/Marketing Insights 5.png',
       alt: 'Sales Growth Statistics',
       title: 'Sales Growth'
     },
     {
-      image: '/uploads/success-stories/1771241403549-Marketing-Insights-003.png',
+      image: '/uploads/success-stories/Marketing Insights 6.png',
+      alt: 'ROI Metrics Dashboard',
+      title: 'ROI Metrics'
+    },
+    {
+      image: '/uploads/success-stories/Marketing Insights 7.png',
+      alt: 'ROI Metrics Dashboard',
+      title: 'ROI Metrics'
+    },
+    {
+      image: '/uploads/success-stories/Marketing Insights 8.png',
+      alt: 'ROI Metrics Dashboard',
+      title: 'ROI Metrics'
+    },
+    {
+      image: '/uploads/success-stories/Marketing Insights 9.png',
+      alt: 'ROI Metrics Dashboard',
+      title: 'ROI Metrics'
+    },
+    {
+      image: '/uploads/success-stories/Marketing Insights 10.png',
+      alt: 'ROI Metrics Dashboard',
+      title: 'ROI Metrics'
+    },
+    {
+      image: '/uploads/success-stories/Marketing Insights 11.png',
       alt: 'ROI Metrics Dashboard',
       title: 'ROI Metrics'
     }

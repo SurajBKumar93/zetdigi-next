@@ -12,7 +12,7 @@ const hankenGrotesk = Hanken_Grotesk({
 export const metadata = {
   title: "ZetDigi - Grow Your Amazon & Marketplace Sales",
   description: "Smart tools for product research, listing optimization, PPC automation & multi-channel selling.",
-  keywords: "Amazon automation, marketplace sales, PPC automation, product research, e-commerce tools",
+  keywords: "Amazon automation, marketplace sales, PPC automation, product research, e-commerce tools, done-for-you",
 };
 
 export default function RootLayout({ children }) {

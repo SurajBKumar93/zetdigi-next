@@ -42,7 +42,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-6 text-white">Services</h4>
             {/* Yahan grid-cols-2 add kiya hai */}
-            <ul className="grid grid-cols-2 gap-x-8 gap-y-3 text-gray-300">
+            <ul className="grid sm:grid-cols-1 xl:grid-cols-2 gap-x-8 gap-y-3 text-gray-300">
               <li><a href="#" className="hover:text-white transition text-sm">Keyword Research</a></li>
               <li><a href="#" className="hover:text-white transition text-sm">Packaging Design</a></li>
               <li><a href="#" className="hover:text-white transition text-sm">Product Photography</a></li>
