@@ -1,0 +1,50 @@
+[
+  {
+    "id": 4,
+    "name": "Michael S.",
+    "rating": 5,
+    "quote": "The team was incredibly supportive and helped me navigate the complexities of Amazon PPC. My ROI has never been better.",
+    "avatar": null,
+    "order": 2
+  },
+  {
+    "id": 5,
+    "name": "Sarah L.",
+    "rating": 5,
+    "quote": "Their EBC/A+ content services transformed my product listings. The increase in traffic and conversions is remarkable.",
+    "avatar": null,
+    "order": 3
+  },
+  {
+    "id": 6,
+    "name": "David K.",
+    "rating": 5,
+    "quote": "The professionalism and expertise of the ZETDIGI team are unmatched. They delivered beyond my expectations.",
+    "avatar": null,
+    "order": 4
+  },
+  {
+    "id": 7,
+    "name": "Emily T.",
+    "rating": 5,
+    "quote": "Our sales grew by 150% after partnering with ZETDIGI. Their strategies are effective and result-driven.",
+    "avatar": null,
+    "order": 5
+  },
+  {
+    "id": 8,
+    "name": "Robert M.",
+    "rating": 5,
+    "quote": "The guidance provided by ZETDIGI was invaluable. They helped optimize our listings and manage our PPC campaigns effectively.",
+    "avatar": null,
+    "order": 6
+  },
+  {
+    "id": 9,
+    "name": "Jessica R.",
+    "rating": 5,
+    "quote": "Thanks to this service, my Amazon sales skyrocketed in just three months. Their A+ content strategies were a game-changer for my brand. Highly recommended!",
+    "avatar": null,
+    "order": 6
+  }
+]

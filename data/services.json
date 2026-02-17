@@ -1,0 +1,840 @@
+[
+  {
+    "id": 1,
+    "slug": "amazon-seo",
+    "title": "Amazon SEO",
+    "order": 1,
+    "status": "published",
+    "hero": {
+      "badge": "Amazon SEO Services",
+      "title": "Amazon SEO",
+      "description": "In today's mobile-driven world, having a strong presence on Amazon is essential to reaching your target audience. Effective Amazon SEO ensures your products appear in relevant searches.",
+      "subtitle": "From Start to Finish, We Manage All Your Amazon Listing Optimization Needs.",
+      "image": "/uploads/services/1771212912682-516993-PIM3E1-254-2.png",
+      "bullets": []
+    },
+    "sections": [
+      {
+        "id": "benefits",
+        "type": "list",
+        "title": "Benefits of using our Amazon SEO services include:",
+        "image": "/uploads/services/1771212947153-2649652.png",
+        "imagePosition": "right",
+        "items": [
+          "Access to comprehensive Amazon solutions",
+          "Optimized product descriptions that boost visibility",
+          "Avoidance of irrelevant terms for better product relevance",
+          "Focus on high-volume SEO keywords for maximum impact",
+          "Creation of highly optimized product listings",
+          "Identification of top keywords for product specifications",
+          "Ensuring customer satisfaction and retention with every purchase",
+          "Enhancing your Amazon Brand Store and branding with A+ Content"
+        ]
+      },
+      {
+        "id": "tips",
+        "type": "tips",
+        "title": "5 Things All Amazon Sellers Should Know",
+        "image": "/uploads/services/1771212963022-Online-ads-amico.png",
+        "imagePosition": "left",
+        "items": [
+          "Amazon's Search Engine is unique and different from other search engines",
+          "Importance of targeting the right keywords",
+          "Visuals are crucial",
+          "Sales and positive reviews are key",
+          "Avoid black hat tactics"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Amazon SEO",
+      "description": "Increase your product visibility with expert Amazon SEO. We optimize listings for better rankings and higher organic traffic.",
+      "buttonText": "Boost your SEO"
+    },
+    "contact": {
+      "image": "/uploads/services/1771211286839-Slide-2.jpg"
+    },
+    "metadata": {
+      "title": "Amazon SEO - ZETDIGI",
+      "description": "Amazon SEO services to increase product visibility, improve rankings, and drive higher organic traffic.",
+      "keywords": "amazon seo, amazon ranking, amazon keyword optimization, listing seo, zetdigi"
+    }
+  },
+  {
+    "id": 2,
+    "slug": "product-photography",
+    "title": "Product Photography",
+    "order": 2,
+    "status": "published",
+    "hero": {
+      "badge": "Amazon Photography Services",
+      "title": "Product Photography",
+      "description": "Let our team of skilled photographers capture your entire Amazon product photography process, from beginning to end.",
+      "subtitle": "",
+      "image": "/uploads/services/1771215424153-product-photography-shoot-shoes-scaled.jpg",
+      "bullets": [
+        "Enhance the Amazon shopping experience with professional visuals",
+        "Increase listing value for maximum impact",
+        "Attention to detail and consistency to strengthen your brand"
+      ]
+    },
+    "sections": [
+      {
+        "id": "deliverables",
+        "type": "cards",
+        "title": "You Will Get",
+        "image": "",
+        "imagePosition": "none",
+        "items": [
+          {
+            "title": "High-Quality Product Images",
+            "description": "Showcase your products with crisp, professional visuals that attract attention and build customer confidence."
+          },
+          {
+            "title": "White Background Shots",
+            "description": "Provide clean, polished images that meet Amazon standards and make your products stand out."
+          },
+          {
+            "title": "Lifestyle Imagery",
+            "description": "Create real-world context images to help customers connect with your product and its benefits."
+          }
+        ]
+      },
+      {
+        "id": "why-zetdigi",
+        "type": "content",
+        "title": "WHY ZETDIGI?",
+        "image": "/uploads/services/1771215456720-13330330_Feb-Business_9-scaled-e1727330569212-1024x921-(1).jpg",
+        "imagePosition": "left",
+        "content": "What truly differentiates us is our focus on Amazon listing optimization and product ranking strategies. We don't just capture images; we optimize them for maximum visibility and impact, enhancing your Amazon listings with high-quality visuals that compel customers to engage.",
+        "items": []
+      },
+      {
+        "id": "process",
+        "type": "process",
+        "title": "How It Works",
+        "subtitle": "Working Process",
+        "image": "",
+        "imagePosition": "none",
+        "items": [
+          {
+            "title": "Analyze the Product and Competitor",
+            "description": "We evaluate your product, target market, and competitors to understand positioning and the style needed for maximum impact.",
+            "image": "/uploads/services/1771215491176-3297225-300x300-(1).jpg"
+          },
+          {
+            "title": "Capture Required Clicks",
+            "description": "We conduct professional shoots and capture all required angles, hero shots, and detail shots to present your listing at its best.",
+            "image": "/uploads/services/1771215495036-2768734-(1).jpg"
+          },
+          {
+            "title": "Finalize the Listing Images",
+            "description": "We refine and format images to meet Amazon guidelines while preserving strong visual appeal and clarity.",
+            "image": "/uploads/services/1771215499903-6213634-300x300-(1).jpg"
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Product Photography",
+      "description": "Prepare yourself for a custom strategy call so we can dive deep into your brand and product requirements.",
+      "buttonText": "Get Your Quote"
+    },
+    "contact": {
+      "image": "/uploads/services/1771215517974-Slide-2.jpg"
+    },
+    "metadata": {
+      "title": "Product Photography - ZETDIGI",
+      "description": "High-quality Amazon product photography to increase conversions and showcase products professionally.",
+      "keywords": "amazon product photography, ecommerce photography, listing images, product images, zetdigi"
+    }
+  },
+  {
+    "id": 3,
+    "slug": "listing-optimization",
+    "title": "Amazon Listing Optimization",
+    "order": 3,
+    "status": "published",
+    "hero": {
+      "badge": "Amazon Optimization Services",
+      "title": "Amazon Listing Optimization",
+      "description": "In the competitive world of eCommerce, standout listings drive sales. Use our Amazon Product Listing Optimization Service to boost search rankings, increase traffic, and elevate your sales.",
+      "subtitle": "",
+      "image": "/uploads/services/1771214888190-grammar-correction-amico-(1).png",
+      "bullets": [
+        "Talented copywriters with extensive sales background.",
+        "Mastery in optimized descriptions to maximize impact.",
+        "Proficient keyword research and Amazon SEO writing.",
+        "A diverse team of writers across the US and beyond."
+      ]
+    },
+    "sections": [
+      {
+        "id": "optimization-cards",
+        "type": "cards",
+        "title": "Optimization Service!",
+        "image": "",
+        "imagePosition": "none",
+        "items": [
+          {
+            "title": "High Rank",
+            "description": "Simply packing keywords into your listing is not enough. Our copywriters know how to place terms strategically for search algorithms."
+          },
+          {
+            "title": "Increase Conversion",
+            "description": "Effective value copy persuades shoppers to buy, improving your listing ranking and every conversion path."
+          },
+          {
+            "title": "Upgrade Your Brand's Perception",
+            "description": "Amazon Listing Optimization goes beyond ranking. Shoppers form opinions from product descriptions and voice."
+          }
+        ]
+      },
+      {
+        "id": "standout-listing",
+        "type": "content",
+        "title": "How We Create a Standout Listing for Your Product",
+        "image": "/uploads/services/1771214906806-79310664_9848798-(1).png",
+        "imagePosition": "left",
+        "content": "We optimize your Amazon product listings by crafting clear and compelling titles, bullet points, and descriptions that highlight key product features. We also use targeted keywords to improve search rankings and refine listing meets Amazon's guidelines.",
+        "items": []
+      },
+      {
+        "id": "how-it-works",
+        "type": "process",
+        "title": "How It Works",
+        "subtitle": "",
+        "image": "",
+        "imagePosition": "none",
+        "items": [
+          {
+            "title": "Keyword Research",
+            "description": "We identify and incorporate the most relevant keywords to improve your product visibility in Amazon search results.",
+            "image": "/uploads/services/1771215783002-image-20.jpg"
+          },
+          {
+            "title": "Optimize Listing",
+            "description": "Our professionals use keyword research and competitor analysis to craft bullet points and detailed descriptions.",
+            "image": "/uploads/services/1771215786523-image-21.jpg"
+          },
+          {
+            "title": "Review and Start Selling",
+            "description": "You review the final draft, provide feedback, and we apply revisions before your listing goes live.",
+            "image": "/uploads/services/1771215790330-image-22.jpg"
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Listing Optimization",
+      "description": "Improve your product visibility and sales with our listing optimization service.",
+      "buttonText": "Get a Quote"
+    },
+    "contact": {
+      "image": "/uploads/services/1771214917737-Slide-2.jpg"
+    },
+    "metadata": {
+      "title": "Listing Optimization - ZETDIGI",
+      "description": "Amazon listing optimization services for better ranking, stronger conversion, and improved brand perception.",
+      "keywords": "amazon listing optimization, amazon listing copy, conversion optimization, product listing, zetdigi"
+    }
+  },
+  {
+    "id": 4,
+    "slug": "content-writing",
+    "title": "Content Writing",
+    "order": 4,
+    "status": "published",
+    "hero": {
+      "badge": "Amazon Content Services",
+      "title": "Your Amazon Content Writing Partner",
+      "description": "At ZetDigi, we focus on creating clear, effective Amazon content that helps your products stand out. Whether you're launching a new product or updating existing listings, our skilled writers know how to make your products appeal to customers on Amazon.",
+      "subtitle": "",
+      "image": "/uploads/services/1771215097136-Posts-amico-(1).png",
+      "bullets": []
+    },
+    "sections": [
+      {
+        "id": "why-important",
+        "type": "content",
+        "title": "Why Content Writing is Important",
+        "image": "/uploads/services/1771215107043-4309858-(1).png",
+        "imagePosition": "right",
+        "content": "In a competitive marketplace like Amazon, how you present your product can make all the difference. Well-written, straightforward content that connects with your audience is crucial for making your products stand out. Our Amazon content writing services are designed to help your listings rank higher in search results and convert visitors into buyers.",
+        "items": []
+      },
+      {
+        "id": "features",
+        "type": "cards",
+        "title": "",
+        "image": "",
+        "imagePosition": "none",
+        "items": [
+          {
+            "title": "Product Titles",
+            "description": "We create concise, keyword-rich titles that attract attention and improve search visibility."
+          },
+          {
+            "title": "Product Descriptions",
+            "description": "We write clear and informative product descriptions that explain your product value and encourage customers to buy."
+          },
+          {
+            "title": "Keyword Optimization",
+            "description": "We conduct thorough keyword research to ensure your content is optimized for Amazon's search engine and product visibility."
+          },
+          {
+            "title": "Bullet Points",
+            "description": "Our bullet points highlight key product features and benefits, making it easy for customers to see why your product is the right choice."
+          },
+          {
+            "title": "A+ Content",
+            "description": "We enhance your listings with detailed, visually appealing A+ Content that showcases your product and helps boost conversions."
+          },
+          {
+            "title": "Brand Storytelling",
+            "description": "We help build your brand on Amazon by incorporating your unique story into your product listings and descriptions."
+          }
+        ]
+      },
+      {
+        "id": "why-choose",
+        "type": "list",
+        "title": "Why Choose ZetDigi?",
+        "image": "/uploads/services/1771215112687-2322714-(1).png",
+        "imagePosition": "left",
+        "items": [
+          "Experience: Our team has extensive experience in Amazon content writing, with a solid understanding of what works on the platform.",
+          "Customization: We tailor our content writing to fit the specific needs of your products and brand, ensuring every detail contributes to your success.",
+          "Results-Focused: Our content is crafted to improve search rankings, boost conversions, and drive more sales for your business."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Ready to Improve Your Amazon Listings?",
+      "description": "Drive sales with clear, compelling product descriptions and listings. Our content writing service ensures your products stand out and convert.",
+      "buttonText": "Get Optimized Content"
+    },
+    "contact": {
+      "image": "/uploads/services/1771215121038-Slide-2.jpg"
+    },
+    "metadata": {
+      "title": "Content Writing - ZETDIGI",
+      "description": "Professional Amazon content writing services including product titles, bullet points, descriptions, A+ content, and brand storytelling.",
+      "keywords": "amazon content writing, amazon listing copy, product descriptions, bullet points, a+ content, zetdigi"
+    }
+  },
+  {
+    "id": 5,
+    "slug": "packaging-design",
+    "title": "Packaging Design",
+    "order": 5,
+    "status": "published",
+    "hero": {
+      "badge": "Amazon Design Services",
+      "title": "Packaging Design",
+      "description": "We provide a variety of future-proof packaging design services with different customization options. If you are looking to elevate your packaging, we can create a fully custom design for you.",
+      "subtitle": "",
+      "image": "/uploads/services/1771215603611-3276797-1-(1).png",
+      "bullets": []
+    },
+    "sections": [
+      {
+        "id": "creative-packaging",
+        "type": "content",
+        "title": "Create packaging that makes an impact.",
+        "image": "/uploads/services/1771215639089-2257821-(1).png",
+        "imagePosition": "left",
+        "content": "Your product packaging is key to selling point. With ZETDIGI, you can design attractive, creative, and professional Amazon packaging that appeals to customers and drives sales.",
+        "items": []
+      },
+      {
+        "id": "aplus-packaging",
+        "type": "content",
+        "title": "A+ Packaging Designs for A+ Brands",
+        "image": "/uploads/services/1771215692507-2167972-(1).png",
+        "imagePosition": "right",
+        "content": "ZETDIGI specializes in creating visually stunning packaging for businesses of all sizes. Our team of skilled designers can bring any idea to life with clear, impactful product packaging services for Amazon sellers.",
+        "items": []
+      }
+    ],
+    "cta": {
+      "title": "We create the ideal packaging design.",
+      "description": "Make a lasting impression with custom packaging that reflects your brand. We create eye-catching designs that enhance your product's appeal and customer experience.",
+      "buttonText": "Design Your Packaging"
+    },
+    "contact": {
+      "image": "/uploads/services/1771215706636-Slide-2.jpg"
+    },
+    "metadata": {
+      "title": "Packaging Design - ZETDIGI",
+      "description": "Custom Amazon packaging design services that strengthen your brand and increase shelf appeal.",
+      "keywords": "amazon packaging design, product packaging, custom packaging, amazon branding, zetdigi"
+    }
+  },
+  {
+    "id": 6,
+    "slug": "account-management",
+    "title": "Amazon Account Management",
+    "order": 6,
+    "status": "published",
+    "hero": {
+      "badge": "Amazon Management Services",
+      "title": "Amazon Account Management",
+      "description": "ZetDigi handles all aspects of an Amazon seller's account, including product listings, inventory, advertising, and customer service, to maximize sales and streamline operations.",
+      "subtitle": "",
+      "image": "/uploads/services/1771214139203-4167276_18771-1024x799.jpg-(1).webp",
+      "bullets": []
+    },
+    "sections": [
+      {
+        "id": "scale-up",
+        "type": "list",
+        "title": "Scale Up Your Amazon",
+        "image": "/uploads/services/1771214147599-12083350_Wavy_Bus-17_Single-12-1024x1024-(1).jpg",
+        "imagePosition": "right",
+        "items": [
+          "Account health management",
+          "Deals and promotion advertisement",
+          "Deals and promotion setup",
+          "Advertisement optimization",
+          "Dispute management",
+          "Day-to-day inventory management",
+          "New product listing/modification",
+          "Return claims",
+          "Seller central backend"
+        ]
+      },
+      {
+        "id": "manage-accounts",
+        "type": "cards",
+        "title": "Manage your Amazon Accounts",
+        "image": "",
+        "imagePosition": "none",
+        "items": [
+          {
+            "title": "Account health management",
+            "description": "Ensure your account remains in good standing with Amazon's policies and guidelines."
+          },
+          {
+            "title": "Advertising Management",
+            "description": "Optimize and manage your Amazon advertising campaigns to maximize ROI."
+          },
+          {
+            "title": "Dispute management",
+            "description": "Get consultation and a clear report on issues that need immediate attention."
+          },
+          {
+            "title": "Day-to-day inventory management",
+            "description": "Oversee daily inventory management to avoid stockouts and overstock situations."
+          },
+          {
+            "title": "New product listing/modification",
+            "description": "Manage new product listings, modifications, and return claims to keep your catalog accurate."
+          },
+          {
+            "title": "Return claims",
+            "description": "We manage return claims efficiently while protecting your account and maintaining customer satisfaction."
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Amazon Account Management",
+      "description": "Simplify your Amazon business with full-service account management.",
+      "buttonText": "Get Managed Solutions"
+    },
+    "contact": {
+      "image": ""
+    },
+    "metadata": {
+      "title": "Account Management - ZETDIGI",
+      "description": "Amazon account management services covering listings, inventory, advertising, and operations.",
+      "keywords": "amazon account management, seller central management, amazon operations, inventory management, zetdigi"
+    }
+  },
+  {
+    "id": 7,
+    "slug": "amazon-a-z",
+    "title": "Amazon A to Z",
+    "order": 7,
+    "status": "published",
+    "hero": {
+      "badge": "Amazon Complete Services",
+      "title": "Amazon A to Z",
+      "description": "We'll handle everything for you, from product research and patent checks to launching your product on Amazon and driving sales so you can focus on what you do best.",
+      "subtitle": "When you're unsure where to start with finding the right product, you can rely on us. With our Amazon A to Z service, we'll search for and evaluate a product based on your requirements.",
+      "image": "/uploads/services/1771213764385-1218961_131989-OSK7H7-282.png",
+      "bullets": []
+    },
+    "sections": [
+      {
+        "id": "what-includes",
+        "type": "list",
+        "title": "What Amazon A to Z Service Include",
+        "image": "/uploads/services/1771213838748-2453354_340665-PA97KW-912-(1).png",
+        "imagePosition": "right",
+        "items": [
+          "Product research",
+          "Keyword Research",
+          "Keyword Analysis",
+          "Product Sourcing",
+          "Product Photography",
+          "Content creation",
+          "A+ EBC",
+          "Product Listing & optimization",
+          "Product Launch",
+          "Amazon PPC"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Product Hunting: Find the Perfect Product for Success",
+      "description": "Get comprehensive support for your Amazon business. From listing creation to PPC, we cover every aspect of your store to ensure maximum success.",
+      "buttonText": "Explore Full Service"
+    },
+    "contact": {
+      "image": "/uploads/services/1771214221506-Slide-2.jpg"
+    },
+    "metadata": {
+      "title": "Amazon A-Z - ZETDIGI",
+      "description": "Complete Amazon A to Z service from product research to launch, listing optimization, and PPC.",
+      "keywords": "amazon a to z service, product hunting, amazon launch, listing optimization, amazon ppc, zetdigi"
+    }
+  },
+  {
+    "id": 8,
+    "slug": "amazon-ebc",
+    "title": "A+ EBC Content",
+    "order": 8,
+    "status": "published",
+    "hero": {
+      "badge": "Amazon Content Services",
+      "title": "A+ EBC Content",
+      "description": "Attract, engage, and convert with our Amazon Enhanced Brand Content solutions.",
+      "subtitle": "",
+      "image": "/uploads/services/1771215234227-5143313_2716351-(1).png",
+      "bullets": [
+        "Premium product visuals that grab attention and drive sales",
+        "Custom EBC templates designed for informative and brand-centric visuals",
+        "Enhanced customer experience for informed buying decisions",
+        "EBC layout design optimized for maximum impact and customization"
+      ]
+    },
+    "sections": [
+      {
+        "id": "why-ebc-important",
+        "type": "cards",
+        "title": "Why EBC is important?",
+        "image": "",
+        "imagePosition": "none",
+        "items": [
+          {
+            "title": "Increase Conversion Rate",
+            "description": "Rich visual layouts and persuasive copy help visitors understand product value and turn into buyers."
+          },
+          {
+            "title": "Enhances Brand Storytelling",
+            "description": "A+ modules let you communicate brand identity more effectively and build stronger recall."
+          },
+          {
+            "title": "Improves Product Differentiation",
+            "description": "Showcase your advantages over competitors by highlighting unique features in a compelling way."
+          },
+          {
+            "title": "Increases Search Visibility",
+            "description": "Well-structured visual content supports listing quality and helps customers discover your products."
+          }
+        ]
+      },
+      {
+        "id": "listing-appeal",
+        "type": "content",
+        "title": "Make Your Listing More Attractive & Appealing With Amazon EBC",
+        "image": "/uploads/services/1771215290696-7140417_3497641-(1).png",
+        "imagePosition": "left",
+        "content": "Amazon has merged EBC and backend seller features into A+ Content, offering brand owners a smarter way to create enhanced listings. It allows optimized layouts, rich modules, and strategic storytelling to differentiate your product and improve conversion rates.",
+        "items": []
+      }
+    ],
+    "cta": {
+      "title": "Amazon A+ Content",
+      "description": "Enhance your product listings with premium visual storytelling and strategic modules built for better conversion.",
+      "buttonText": "Start Your Content Upgrade"
+    },
+    "contact": {
+      "image": "/uploads/services/1771215350591-Slide-2.jpg"
+    },
+    "metadata": {
+      "title": "Amazon EBC - ZETDIGI",
+      "description": "Amazon A+ EBC content services designed to increase conversions, strengthen brand trust, and improve listing performance.",
+      "keywords": "amazon ebc, amazon a+ content, enhanced brand content, amazon listing design, zetdigi"
+    }
+  },
+  {
+    "id": 9,
+    "slug": "keyword-research",
+    "title": "Keyword Ranking",
+    "order": 9,
+    "status": "published",
+    "hero": {
+      "badge": "Amazon Keyword Services",
+      "title": "Keyword Ranking",
+      "description": "Get top-performing keywords with high search volume and relevancy to increase your search engine visibility, generate more traffic, and grow your sales.",
+      "subtitle": "",
+      "image": "/uploads/services/1771213362393-Search-amico-1024x1024.png",
+      "bullets": []
+    },
+    "sections": [
+      {
+        "id": "features",
+        "type": "list",
+        "title": "Features",
+        "image": "/uploads/services/1771213408844-Features-Overview-amico-1024x1024.png.webp",
+        "imagePosition": "left",
+        "items": [
+          "On-Page Optimization & Improvement: Zetdigi's on-page optimization process is crafted to boost your search rankings by enhancing the quality and quantity of links to your website, driving more organic traffic.",
+          "Keyword Research & Analysis: Effective keyword research and analysis are crucial for success on Amazon. We support over 20 languages, use advanced AI-powered keyword extraction, and leverage proprietary data to identify high-impact terms."
+        ]
+      },
+      {
+        "id": "why-ranking-important",
+        "type": "cards",
+        "title": "Why is Ranking Important?",
+        "image": "",
+        "imagePosition": "none",
+        "items": [
+          {
+            "title": "On-Page Optimization & Improvement",
+            "description": "Our team optimizes and enhances your product listing to help you achieve higher rankings on Amazon."
+          },
+          {
+            "title": "Keyword Research & Analysis",
+            "description": "We analyze your competition and recommend keywords that will boost your ranking on search engine results pages."
+          },
+          {
+            "title": "Competition Analysis",
+            "description": "We conduct a thorough analysis of your competitors and provide insights into their profiles and performance."
+          },
+          {
+            "title": "Shipment Creation & FBA Setup",
+            "description": "We assist with creating shipments and setting up FBA to ensure your products are shipped efficiently to customers."
+          },
+          {
+            "title": "Boost Your Amazon Rankings",
+            "description": "Our proven strategy elevates your organic sales and rankings on Amazon."
+          },
+          {
+            "title": "Rank Your Products on Amazon",
+            "description": "We create a tailored plan to increase your organic rankings and improve profits."
+          },
+          {
+            "title": "Quick Results in 14 Days",
+            "description": "We coordinate with you to ensure services take effect at the optimal time and deliver results quickly."
+          },
+          {
+            "title": "Schedule a Call with Our Experts",
+            "description": "Book a call with us to learn more about our services, pricing, and timelines."
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Amazon Keyword Ranking",
+      "description": "Boost your product visibility with effective keyword strategies. We optimize your listings to rank higher and reach more customers.",
+      "buttonText": "Improve Your Rankings"
+    },
+    "contact": {
+      "image": ""
+    },
+    "metadata": {
+      "title": "Keyword Research - ZETDIGI",
+      "description": "Amazon keyword research and ranking services to improve visibility, traffic, and conversions.",
+      "keywords": "amazon keyword research, amazon keyword ranking, product ranking, amazon seo, zetdigi"
+    }
+  },
+  {
+    "id": 10,
+    "slug": "launch-rank",
+    "title": "Launch & Rank",
+    "order": 10,
+    "status": "published",
+    "hero": {
+      "badge": "Amazon Launch Services",
+      "title": "Launch & Rank",
+      "description": "Launching a new product on Amazon and securing a strong ranking can be challenging. At ZetDigi, we offer targeted Amazon Launch and Rank services to ensure your product makes a powerful entry into the marketplace and achieves lasting success.",
+      "subtitle": "",
+      "image": "/uploads/services/1771214651351-1539893_158535-OYHJDN-1-(1).png",
+      "bullets": []
+    },
+    "sections": [
+      {
+        "id": "what-we-do",
+        "type": "list",
+        "title": "What We Do",
+        "image": "/uploads/services/1771214666221-8510431_3938991-(1).png",
+        "imagePosition": "right",
+        "items": [
+          "Product launch strategy for maximum visibility and impact",
+          "Keyword optimization with high-traffic terms",
+          "PPC campaign management during the critical launch phase",
+          "Review generation through ethical methods",
+          "Ongoing rank monitoring and improvement"
+        ]
+      },
+      {
+        "id": "why-launch",
+        "type": "list",
+        "title": "Why Launch with ZetDigi?",
+        "image": "/uploads/services/1771214820818-4087093_2159570-(1).png",
+        "imagePosition": "left",
+        "items": [
+          "Experienced team with proven launch and rank success on Amazon",
+          "Tailored strategies aligned to your product and market",
+          "Sustainable, long-term ranking growth over quick fixes"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Ready to Launch?",
+      "description": "Partner with ZetDigi for a successful Amazon product launch. We’ll help you navigate the complexities of the marketplace and secure a top-ranking spot for your product.",
+      "buttonText": ""
+    },
+    "contact": {
+      "image": "/uploads/services/1771214622755-Slide-2.jpg"
+    },
+    "metadata": {
+      "title": "Launch & Rank - ZETDIGI",
+      "description": "Amazon Launch and Rank services to drive visibility, improve rankings, and scale product growth.",
+      "keywords": "amazon launch and rank, product launch, amazon ranking strategy, amazon growth, zetdigi"
+    }
+  },
+  {
+    "id": 11,
+    "slug": "pay-per-click",
+    "title": "Amazon PPC",
+    "order": 11,
+    "status": "published",
+    "hero": {
+      "badge": "Amazon Advertising Services",
+      "title": "Amazon PPC",
+      "description": "Top quality, affordable, and fast turnaround. Better ACoS, high conversions, more revenue.",
+      "subtitle": "",
+      "image": "/uploads/services/1771214319772-1219492_131450-OSX2D2-167-(1).png",
+      "bullets": [
+        "Amazon PPC ads help your products appear at top of search results.",
+        "We monitor and optimize campaigns to improve performance.",
+        "We provide clear reports to keep you updated on campaign progress."
+      ]
+    },
+    "sections": [
+      {
+        "id": "ppc-features",
+        "type": "cards",
+        "title": "",
+        "image": "/uploads/services/1771214331398-2438423_341480-PACBW9-191-(1).png",
+        "imagePosition": "none",
+        "items": [
+          {
+            "title": "We Fix Existing Campaigns",
+            "description": "If your existing campaigns are underperforming, we can help improve them."
+          },
+          {
+            "title": "Design Customized PPC Strategies",
+            "description": "We build custom campaigns tailored to your business goals and budget."
+          },
+          {
+            "title": "Maximize ROAS",
+            "description": "We adjust your ad campaigns to boost return on ad spend and lower spend waste."
+          },
+          {
+            "title": "Reduce ACoS",
+            "description": "Audit old campaigns to identify what is working and what needs improvement."
+          }
+        ]
+      },
+      {
+        "id": "key-metrics",
+        "type": "list",
+        "title": "Key Metrics",
+        "image": "/uploads/services/1771214388277-2438423_341480-PACBW9-191-(1).png",
+        "imagePosition": "left",
+        "items": [
+          "TACoS: Total Advertising Cost of Sales",
+          "ACoS: Advertising Cost of Sales",
+          "AKP: Average Keyword Positioning",
+          "USP: Unit Session Percentage"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Amazon PPC Management",
+      "description": "Maximize your ROI with targeted Amazon PPC campaigns, strategic bids, and increased visibility to drive more sales.",
+      "buttonText": "Request a Free PPC Audit"
+    },
+    "contact": {
+      "image": ""
+    },
+    "metadata": {
+      "title": "Pay Per Click (PPC) - ZETDIGI",
+      "description": "Amazon PPC management services focused on maximizing ROAS, reducing ACoS, and scaling ad performance.",
+      "keywords": "amazon ppc, ppc management, amazon ads, acos, roas, sponsored ads, zetdigi"
+    }
+  },
+  {
+    "id": 12,
+    "slug": "storefront-branding",
+    "title": "Storefront & Branding",
+    "order": 12,
+    "status": "published",
+    "hero": {
+      "badge": "Amazon Branding Services",
+      "title": "We Help You Build Your Brand",
+      "description": "We create a customizable Amazon Storefront that showcases your products and tells your brand's story. Through strategic branding, we ensure your product is consistently recognized across all listings.",
+      "subtitle": "",
+      "image": "/uploads/services/1771214508188-2076901-(1).png",
+      "bullets": []
+    },
+    "sections": [
+      {
+        "id": "aplus-content",
+        "type": "content",
+        "title": "Amazon A+ Content",
+        "image": "/uploads/services/1771214518015-368963-PB8S32-628-(1).png",
+        "imagePosition": "right",
+        "content": "Drive sales with better product images, videos, and text. Attracting customers to your Amazon product and brand pages is just the first step. The real challenge is converting those visits into sales. A+ Content plays a key role in this, enhancing your product's appeal through multimedia and boosting conversion rates.",
+        "items": []
+      },
+      {
+        "id": "ebc-design",
+        "type": "content",
+        "title": "Amazon EBC Design & Development",
+        "image": "/uploads/services/1771214521573-162004-OVE9EL-191-1-(1).png",
+        "imagePosition": "left",
+        "content": "We assist long-time Amazon sellers who have been using Enhanced Brand Content (EBC), now known as A+ Content. Our experts audit current EBC, refine text, images, and videos to boost conversions and sales. Our deep analysis ensures your A+ Content aligns with the latest guidelines and protects your branding efforts.",
+        "items": []
+      },
+      {
+        "id": "amazon-storefront",
+        "type": "content",
+        "title": "Amazon Storefront",
+        "image": "/uploads/services/1771214524594-2516923-(1).png",
+        "imagePosition": "right",
+        "content": "Amazon Storefront allows sellers to showcase their products separately, without competitor ads. We use Storefront SEO techniques to help you outshine competitors. This platform lets you leverage both sponsored brand and product ads, offering a captive audience focused on your brand. We can design your Amazon Storefront as part of our consulting services, tailoring it to your product range and business goals.",
+        "items": []
+      }
+    ],
+    "cta": {
+      "title": "TALK TO MARKETING EXPERT",
+      "description": "Create a unique Amazon storefront that reflects your brand. We design custom storefronts that enhance identity and improve customer engagement.",
+      "buttonText": "Build Your Brand Store"
+    },
+    "contact": {
+      "image": "/uploads/services/1771214578077-Slide-2.jpg"
+    },
+    "metadata": {
+      "title": "Storefront & Branding - ZETDIGI",
+      "description": "Amazon storefront and branding services including A+ content, EBC design, and brand growth strategy.",
+      "keywords": "amazon storefront, amazon branding, a+ content, ebc design, brand development, zetdigi"
+    }
+  }
+]

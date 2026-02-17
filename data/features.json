@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Product Research",
+    "desc": "Find winning products with AI + real market data",
+    "icon": "/icons/Analytics-Icon.png",
+    "order": 1
+  },
+  {
+    "id": 2,
+    "title": "Listing Optimization",
+    "desc": "SEO titles, bullet points & backend keyword suggestions",
+    "icon": "/icons/Quality-Assurance.png",
+    "order": 2
+  },
+  {
+    "id": 3,
+    "title": "PPC Automation",
+    "desc": "Smart bids, rule-based campaigns & budget recommendations",
+    "icon": "/icons/PPC-Click-Icon.png",
+    "order": 3
+  },
+  {
+    "id": 4,
+    "title": "Multi-Channel Sync",
+    "desc": "Sell on Amazon, eBay, Shopify & more from one dashboard",
+    "icon": "/icons/Network-Diagram.png",
+    "order": 4
+  },
+  {
+    "id": 5,
+    "title": "Inventory Insights",
+    "desc": "Forecast stock levels & avoid stockouts",
+    "icon": "/icons/Settings-Icon.png",
+    "order": 5
+  },
+  {
+    "id": 6,
+    "title": "Competitor Tracking",
+    "desc": "Monitor competitors & pricing strategies",
+    "icon": "/icons/User-Management.png",
+    "order": 6
+  }
+]

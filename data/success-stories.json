@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "image": "/uploads/success-stories/1771241369428-Marketing-Insights-01.png",
+    "alt": "PPC Automation Results - AI Optimized",
+    "title": "Campaign Performance",
+    "order": 1
+  },
+  {
+    "id": 2,
+    "image": "/uploads/success-stories/1771241393952-Marketing-Insights-02.png",
+    "alt": "Sales Growth Statistics",
+    "title": "Sales Growth",
+    "order": 2
+  },
+  {
+    "id": 3,
+    "image": "/uploads/success-stories/1771241403549-Marketing-Insights-03.png",
+    "alt": "ROI Metrics Dashboard",
+    "title": "ROI Metrics",
+    "order": 3
+  }
+]

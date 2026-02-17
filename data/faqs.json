@@ -1,0 +1,56 @@
+[
+  {
+    "id": 4,
+    "question": "What are the services provided by Zetdigi?",
+    "answer": "Zetdigi offers a diverse range of digital marketing solutions, covering various areas such as search engine optimization (SEO), social media management, pay-per-click (PPC) advertising, content marketing, email marketing, web design and development, and business development consultancy.",
+    "order": 4
+  },
+  {
+    "id": 5,
+    "question": "What measures does Zetdigi take to ensure the success of its digital marketing campaigns?",
+    "answer": "Zetdigi achieves success by leveraging extensive research, strategic planning, data-driven insights, and continuous optimization. Our approach is customized to align with the unique goals and target audience of each client.",
+    "order": 2
+  },
+  {
+    "id": 6,
+    "question": "Does Zetdigi serve businesses of all sizes?",
+    "answer": "Zetdigi collaborates with businesses of all sizes, including startups and established enterprises. We possess the expertise to tailor strategies according to varying budgets and goals.",
+    "order": 3
+  },
+  {
+    "id": 7,
+    "question": "Is Zetdigi capable of collaborating with businesses across various industries?",
+    "answer": "Yes, Zetdigi has worked with businesses in various industries including e-commerce, technology, healthcare, and education. We customize our strategies to meet the specific needs of each industry.",
+    "order": 4
+  },
+  {
+    "id": 8,
+    "question": "What metrics does Zetdigi employ to evaluate the success of its digital marketing campaigns?",
+    "answer": "Zetdigi utilizes a variety of key performance indicators (KPIs) to assess the performance and success of its campaigns. These KPIs encompass metrics such as website traffic, conversions, click-through rates, engagement levels, and return on investment (ROI).",
+    "order": 5
+  },
+  {
+    "id": 9,
+    "question": "Does Zetdigi maintain transparency with its clients regarding the progress and results of their campaigns?",
+    "answer": "Absolutely! Zetdigi upholds transparency and maintains regular communication with clients. We deliver comprehensive reports, analytics, and updates to keep clients well-informed about the performance and outcomes of their digital marketing campaigns.",
+    "order": 6
+  },
+  {
+    "id": 10,
+    "question": "Does Zetdigi offer references or case studies from its past clients?",
+    "answer": "Absolutely! Zetdigi is more than willing to provide references or case studies as per your request. We have an extensive portfolio of successful projects that exemplify our capabilities, acquired through collaboration with numerous satisfied clients.",
+    "order": 7
+  },
+  {
+    "id": 11,
+    "question": "What is Zetdigi's approach to developing a digital marketing strategy?",
+    "answer": "Zetdigi adopts a collaborative approach when crafting a digital marketing strategy. We begin by comprehending your business goals, target audience, and industry. Subsequently, we conduct comprehensive research and analysis to construct a customized strategy that aligns with your specific objectives.",
+    "order": 8
+  },
+  {
+    "id": 12,
+    "question": "What is the process to begin utilizing Zetdigi's digital marketing services?",
+    "answer": "Initiating the process is hassle-free! All you need to do is contact our team via our website or provided contact details. We will promptly schedule a consultation to delve into your objectives and devise a personalized digital marketing plan tailored to your business.",
+    "order": 9
+  }
+]

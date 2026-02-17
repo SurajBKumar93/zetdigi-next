@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "additionalDirectories": [
+      "c:\\Users\\TECHNOSELLERS\\Desktop"
+    ],
+    "allow": [
+      "Bash(npm uninstall:*)"
+    ]
+  }
+}

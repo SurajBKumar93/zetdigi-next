@@ -1,0 +1,54 @@
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Testing
+coverage
+.nyc_output
+*.log
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs (handled by Vercel)
+.next
+out
+dist
+build
+
+# Development
+.claude
+*.md
+README.md
+DESIGN_SYSTEM_REFERENCE.md
+IMPLEMENTATION_GUIDE.md
+MAIN_PAGES_THEME_UPDATE.md
+RESPONSIVENESS_AUDIT_320PX.md
+RESPONSIVENESS_FIXES_SUMMARY.md
+SERVICE_PAGES_THEME_UPDATE.md
+
+# Git
+.git
+.gitignore
+
+# Misc
+*.bak
+*.tmp
+*.temp

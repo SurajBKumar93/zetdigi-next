@@ -1,0 +1,33 @@
+{
+  "logo": "/logo.png",
+  "menuItems": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Services",
+      "children": [
+        { "label": "Web Development", "href": "/services/web-development" },
+        { "label": "App Development", "href": "/services/app-development" },
+        { "label": "Digital Marketing", "href": "/services/digital-marketing" }
+      ]
+    },
+    {
+      "label": "Portfolio",
+      "href": "/portfolio"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Blogs",
+      "href": "/blogs"
+    }
+  ],
+  "cta": {
+    "text": "Start a Project",
+    "href": "#contact"
+  }
+}
