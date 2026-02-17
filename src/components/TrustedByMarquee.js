@@ -4,12 +4,19 @@ import Image from 'next/image';
 
 export default function TrustedByMarquee() {
   const logos = [
-    { name: 'Factor Duty', image: '/brands/Factor-Duty-Wheel.png' },
-    { name: 'Rage Fitness', image: '/brands/Rage-Fitness.png' },
-    { name: 'Gibson', image: '/brands/Gibson-Logo.png' },
-    { name: 'Mr. Froth', image: '/brands/Mr-Froth.png' },
-    { name: 'Factor Duty 2', image: '/brands/Factor-Duty-Wheel-2.png' },
-    { name: 'Gibson 2', image: '/brands/Gibson-Logo-2.png' },
+    { name: 'Factor Duty', image: '/brands/Brand Logos 1.png' },
+    { name: 'Rage Fitness', image: '/brands/Brand Logos 2.png' },
+    { name: 'Gibson', image: '/brands/Brand Logos 3.png' },
+    { name: 'Mr. Froth', image: '/brands/Brand Logos 4.png' },
+    { name: 'Factor Duty 2', image: '/brands/Brand Logos 5.png' },
+    { name: 'Gibson 2', image: '/brands/Brand Logos 6.png' },
+    { name: 'Rage Fitness 2', image: '/brands/Brand Logos 7.png' },
+    { name: 'Mr. Froth 2', image: '/brands/Brand Logos 8.png' },
+    { name: 'Factor Duty 3', image: '/brands/Brand Logos 9.png' },
+    { name: 'Gibson 3', image: '/brands/Brand Logos 10.png' },
+    { name: 'Rage Fitness 3', image: '/brands/Brand Logos 11.png' },
+    { name: 'Mr. Froth 3', image: '/brands/Brand Logos 12.png' },
+    { name: 'Mr. Froth 3', image: '/brands/Brand Logos 13.png' },
   ];
 
   return (

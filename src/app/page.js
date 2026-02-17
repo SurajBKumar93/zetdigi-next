@@ -37,7 +37,6 @@ export default async function Home() {
       <PortfolioSlider items={pageData.portfolio.items} />
       <Testimonials testimonials={pageData.testimonials.testimonials} />
       <TrustedByMarquee />
-      <WhyChooseUs />
       <FAQ />
       <CalendlySection />
       <BlogPosts posts={pageData.blog.posts} />

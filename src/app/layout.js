@@ -20,6 +20,8 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* Aggressive preloading for Calendly - instant load */}
+        {/* favicon */}
+        <link rel="icon" href="/icon.png" />
         <link rel="preconnect" href="https://calendly.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://assets.calendly.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://calendly.com" />

@@ -60,7 +60,7 @@ export default function FeaturesGrid({ features = [] }) {
                   </div>
                 </div>
                 <h3 className="text-sm sm:text-base font-semibold mb-2 sm:mb-3 text-gray-900">{feature.title}</h3>
-                <p className="text-gray-600 text-xs sm:text-sm font-normal leading-relaxed">{feature.desc}</p>
+                <p className="text-gray-600 text-sm sm:text-md font-normal leading-relaxed">{feature.desc}</p>
               </div>
             );
           })}
