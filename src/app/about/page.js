@@ -3,6 +3,7 @@ import AboutUsHero from '@/components/AboutUsHero';
 import WhyChooseZetDigi from '@/components/WhyChooseZetDigi';
 import TrustedByMarquee from '@/components/TrustedByMarquee';
 import Footer from '@/components/Footer';
+import { getTrustedBrands, getWhyChooseZetDigi } from '@/lib/api';
 
 export const metadata = {
   title: 'About Us - ZETDIGI | Your Digital Success Partner',
@@ -10,16 +11,21 @@ export const metadata = {
   keywords: 'about zetdigi, digital marketing agency, amazon services, website development, our story',
 };
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const [trustedBrandsData, whyChooseZetDigiData] = await Promise.all([
+    getTrustedBrands(),
+    getWhyChooseZetDigi(),
+  ]);
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
       <AboutUsHero />
 
       {/* Brand Marquee */}
-      <TrustedByMarquee />
+      <TrustedByMarquee brands={trustedBrandsData.brands} />
 
-      <WhyChooseZetDigi />
+      <WhyChooseZetDigi whyChooseZetDigi={whyChooseZetDigiData} />
       <Footer />
     </div>
   );
