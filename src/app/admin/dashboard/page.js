@@ -17,6 +17,9 @@ export default function AdminDashboard() {
     faqs: 0,
     hero: 0,
     services: 0,
+    provenResults: 0,
+    trustedBrands: 0,
+    servicesSection: 0,
   });
 
   useEffect(() => {
@@ -31,7 +34,7 @@ export default function AdminDashboard() {
 
   const fetchStats = async () => {
     try {
-      const [portfolio, testimonials, blogs, successStories, features, faqs, hero, services] = await Promise.all([
+      const [portfolio, testimonials, blogs, successStories, features, faqs, hero, services, provenResults, trustedBrands, servicesSection] = await Promise.all([
         fetch('/api/admin/portfolio').then(r => r.json()),
         fetch('/api/admin/testimonials').then(r => r.json()),
         fetch('/api/admin/blogs').then(r => r.json()),
@@ -40,6 +43,9 @@ export default function AdminDashboard() {
         fetch('/api/admin/faqs').then(r => r.json()),
         fetch('/api/admin/hero').then(r => r.json()),
         fetch('/api/admin/services').then(r => r.json()),
+        fetch('/api/admin/proven-results').then(r => r.json()),
+        fetch('/api/admin/trusted-brands').then(r => r.json()),
+        fetch('/api/admin/services-section').then(r => r.json()),
       ]);
 
       setStats({
@@ -51,6 +57,9 @@ export default function AdminDashboard() {
         faqs: faqs.length || 0,
         hero: hero.length || 0,
         services: services.length || 0,
+        provenResults: provenResults.length || 0,
+        trustedBrands: trustedBrands.length || 0,
+        servicesSection: (servicesSection.services?.length || 0) + (servicesSection.steps?.length || 0),
       });
     } catch (error) {
       console.error('Failed to fetch stats:', error);
@@ -78,6 +87,11 @@ export default function AdminDashboard() {
     { name: 'Features', href: '/admin/features', icon: '⭐', count: stats.features },
     { name: 'FAQs', href: '/admin/faqs', icon: '❓', count: stats.faqs },
     { name: 'Hero Slides', href: '/admin/hero', icon: '🎯', count: stats.hero },
+    { name: 'Proven Results', href: '/admin/proven-results', icon: '📈', count: stats.provenResults },
+    { name: 'Trusted Brands', href: '/admin/trusted-brands', icon: '🏷️', count: stats.trustedBrands },
+    { name: 'Services & How It Works', href: '/admin/services-section', icon: '⚙️', count: stats.servicesSection },
+    { name: 'Why Choose Us', href: '/admin/why-choose-us', icon: '🏆', count: null },
+    { name: 'Why Choose ZetDigi', href: '/admin/why-choose-zetdigi', icon: '✨', count: null },
   ];
 
   return (
@@ -116,7 +130,7 @@ export default function AdminDashboard() {
                       <h3 className="text-lg font-semibold text-gray-900">{item.name}</h3>
                     </div>
                     <p className="text-sm text-gray-600">
-                      {item.count} {item.count === 1 ? 'item' : 'items'}
+                      {item.count !== null ? `${item.count} ${item.count === 1 ? 'item' : 'items'}` : 'Edit content'}
                     </p>
                   </div>
                   <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
