@@ -1,0 +1,15 @@
+[
+  { "id": 1, "name": "Factor Duty", "image": "/brands/Brand Logos 1.png", "order": 1 },
+  { "id": 2, "name": "Rage Fitness", "image": "/brands/Brand Logos 2.png", "order": 2 },
+  { "id": 3, "name": "Gibson", "image": "/brands/Brand Logos 3.png", "order": 3 },
+  { "id": 4, "name": "Mr. Froth", "image": "/brands/Brand Logos 4.png", "order": 4 },
+  { "id": 5, "name": "Factor Duty 2", "image": "/brands/Brand Logos 5.png", "order": 5 },
+  { "id": 6, "name": "Gibson 2", "image": "/brands/Brand Logos 6.png", "order": 6 },
+  { "id": 7, "name": "Rage Fitness 2", "image": "/brands/Brand Logos 7.png", "order": 7 },
+  { "id": 8, "name": "Mr. Froth 2", "image": "/brands/Brand Logos 8.png", "order": 8 },
+  { "id": 9, "name": "Factor Duty 3", "image": "/brands/Brand Logos 9.png", "order": 9 },
+  { "id": 10, "name": "Gibson 3", "image": "/brands/Brand Logos 10.png", "order": 10 },
+  { "id": 11, "name": "Rage Fitness 3", "image": "/brands/Brand Logos 11.png", "order": 11 },
+  { "id": 12, "name": "Mr. Froth 3", "image": "/brands/Brand Logos 12.png", "order": 12 },
+  { "id": 13, "name": "Mr. Froth 4", "image": "/brands/Brand Logos 13.png", "order": 13 }
+]

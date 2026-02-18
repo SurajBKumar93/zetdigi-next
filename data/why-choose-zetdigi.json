@@ -1,0 +1,11 @@
+{
+  "badge": "WHY CHOOSE ZETDIGI?",
+  "heading": "Driving Growth, Inspiring Excellence,",
+  "headingHighlight": "Our Values, Your Success",
+  "image": "/about/image-14.jpg",
+  "points": [
+    { "id": 1, "text": "We offer cutting-edge digital strategies and services that keep your business ahead in the rapidly evolving digital landscape.", "order": 1 },
+    { "id": 2, "text": "Our decisions are backed by data and analytics, ensuring effective and measurable results for your marketing campaigns.", "order": 2 },
+    { "id": 3, "text": "Tailored to your business objectives, we create personalized strategies that resonate with your target audience and drive significant growth.", "order": 3 }
+  ]
+}

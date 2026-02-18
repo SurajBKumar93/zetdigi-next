@@ -1,0 +1,41 @@
+{
+  "services": [
+    { "id": 1, "name": "Conversion Rate Optimization", "order": 1 },
+    { "id": 2, "name": "Click Through Rate Optimization", "order": 2 },
+    { "id": 3, "name": "Amazon PPC Management", "order": 3 },
+    { "id": 4, "name": "Product Photography and Videograph", "order": 4 },
+    { "id": 5, "name": "AI Powered Creatives", "order": 5 },
+    { "id": 6, "name": "A+ Content and Storefront Creation", "order": 6 },
+    { "id": 7, "name": "Consultation", "order": 7 }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "number": 1,
+      "title": "Book a Strategy Session",
+      "description": "Let's start with clarity. Book a free 1-on-1 session with our strategy team. We'll review your brand, listings, and goals to identify exactly where your biggest growth opportunities lie - whether it's creative optimization or PPC scaling.",
+      "order": 1
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "title": "Audit & Gameplan",
+      "description": "We'll run a deep audit of your Amazon presence - from visuals and content to traffic and conversions. You'll get a clear, data-driven roadmap that shows what needs fixing, what's working, and how we'll move the needle.",
+      "order": 2
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "title": "Onboarding & Setup",
+      "description": "Once you're ready to move forward, we'll onboard you into our client portal. Here, you'll meet your dedicated success manager, approve the plan, and we'll align timelines for creative delivery and PPC execution.",
+      "order": 3
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "title": "Delivery & Optimization",
+      "description": "You'll start seeing results fast. Our team will deliver the first creative or campaign batch, gather your feedback, and continue optimizing until we hit your performance targets. Every deliverable is designed to increase CTR, CVR, and ROI - not just look good.",
+      "order": 4
+    }
+  ]
+}
