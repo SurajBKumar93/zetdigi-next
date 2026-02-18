@@ -205,6 +205,61 @@ export async function getNavigationData() {
   }
 }
 
+// Proven Results Data
+export async function getProvenResults() {
+  try {
+    const results = await dataStore.getProvenResults();
+    return { results: results.sort((a, b) => a.order - b.order) };
+  } catch (error) {
+    console.error('Failed to fetch proven results:', error);
+    return { results: [] };
+  }
+}
+
+// Trusted Brands Data
+export async function getTrustedBrands() {
+  try {
+    const brands = await dataStore.getTrustedBrands();
+    return { brands: brands.sort((a, b) => a.order - b.order) };
+  } catch (error) {
+    console.error('Failed to fetch trusted brands:', error);
+    return { brands: [] };
+  }
+}
+
+// Why Choose Us Data
+export async function getWhyChooseUs() {
+  try {
+    const data = await dataStore.getWhyChooseUs();
+    return data;
+  } catch (error) {
+    console.error('Failed to fetch why choose us:', error);
+    return { title: '', stats: [] };
+  }
+}
+
+// Why Choose ZetDigi Data
+export async function getWhyChooseZetDigi() {
+  try {
+    const data = await dataStore.getWhyChooseZetDigi();
+    return data;
+  } catch (error) {
+    console.error('Failed to fetch why choose zetdigi:', error);
+    return { badge: '', heading: '', headingHighlight: '', image: '', points: [] };
+  }
+}
+
+// Services Section Data
+export async function getServicesSection() {
+  try {
+    const data = await dataStore.getServicesSection();
+    return data;
+  } catch (error) {
+    console.error('Failed to fetch services section:', error);
+    return { services: [], steps: [] };
+  }
+}
+
 /**
  * Fetch all home page data in parallel for better performance
  */
@@ -218,6 +273,11 @@ export async function getHomePageData() {
       testimonialsData,
       blogData,
       navigationData,
+      provenResultsData,
+      trustedBrandsData,
+      whyChooseUsData,
+      whyChooseZetDigiData,
+      servicesSectionData,
     ] = await Promise.all([
       getHeroSlides(),
       getFeatures(),
@@ -226,6 +286,11 @@ export async function getHomePageData() {
       getTestimonials(),
       getBlogPosts(),
       getNavigationData(),
+      getProvenResults(),
+      getTrustedBrands(),
+      getWhyChooseUs(),
+      getWhyChooseZetDigi(),
+      getServicesSection(),
     ]);
 
     return {
@@ -236,6 +301,11 @@ export async function getHomePageData() {
       testimonials: testimonialsData,
       blog: blogData,
       navigation: navigationData,
+      provenResults: provenResultsData,
+      trustedBrands: trustedBrandsData,
+      whyChooseUs: whyChooseUsData,
+      whyChooseZetDigi: whyChooseZetDigiData,
+      servicesSection: servicesSectionData,
     };
   } catch (error) {
     console.error('Failed to fetch home page data:', error);

@@ -67,3 +67,23 @@ export const getServiceBySlug = async (slug) => {
   const services = await getServices();
   return services.find(service => service.slug === slug);
 };
+
+// Proven Results
+export const getProvenResults = () => readData('proven-results.json');
+export const saveProvenResults = (results) => writeData('proven-results.json', results);
+
+// Trusted Brands
+export const getTrustedBrands = () => readData('trusted-brands.json');
+export const saveTrustedBrands = (brands) => writeData('trusted-brands.json', brands);
+
+// Why Choose Us
+export const getWhyChooseUs = () => readData('why-choose-us.json');
+export const saveWhyChooseUs = (data) => writeData('why-choose-us.json', data);
+
+// Why Choose ZetDigi
+export const getWhyChooseZetDigi = () => readData('why-choose-zetdigi.json');
+export const saveWhyChooseZetDigi = (data) => writeData('why-choose-zetdigi.json', data);
+
+// Services Section (homepage services list + how it works steps)
+export const getServicesSection = () => readData('services-section.json');
+export const saveServicesSection = (data) => writeData('services-section.json', data);
