@@ -2,23 +2,7 @@
 
 import Image from 'next/image';
 
-export default function TrustedByMarquee() {
-  const logos = [
-    { name: 'Factor Duty', image: '/brands/Brand Logos 1.png' },
-    { name: 'Rage Fitness', image: '/brands/Brand Logos 2.png' },
-    { name: 'Gibson', image: '/brands/Brand Logos 3.png' },
-    { name: 'Mr. Froth', image: '/brands/Brand Logos 4.png' },
-    { name: 'Factor Duty 2', image: '/brands/Brand Logos 5.png' },
-    { name: 'Gibson 2', image: '/brands/Brand Logos 6.png' },
-    { name: 'Rage Fitness 2', image: '/brands/Brand Logos 7.png' },
-    { name: 'Mr. Froth 2', image: '/brands/Brand Logos 8.png' },
-    { name: 'Factor Duty 3', image: '/brands/Brand Logos 9.png' },
-    { name: 'Gibson 3', image: '/brands/Brand Logos 10.png' },
-    { name: 'Rage Fitness 3', image: '/brands/Brand Logos 11.png' },
-    { name: 'Mr. Froth 3', image: '/brands/Brand Logos 12.png' },
-    { name: 'Mr. Froth 3', image: '/brands/Brand Logos 13.png' },
-  ];
-
+export default function TrustedByMarquee({ brands = [] }) {
   return (
     <section className="py-20 bg-white overflow-hidden">
       <div className="container-custom mx-auto px-6 mb-12">
@@ -48,8 +32,8 @@ export default function TrustedByMarquee() {
 
         <div className="flex animate-scroll-logos">
           {/* First Set of Logos */}
-          {logos.map((logo, idx) => (
-            <div key={`first-${idx}`} className="flex-shrink-0 px-8">
+          {brands.map((logo, idx) => (
+            <div key={`first-${logo.id || idx}`} className="flex-shrink-0 px-8">
               <div className="w-48">
                 <Image
                   src={logo.image}
@@ -63,8 +47,8 @@ export default function TrustedByMarquee() {
           ))}
 
           {/* Duplicate Set for Seamless Loop */}
-          {logos.map((logo, idx) => (
-            <div key={`second-${idx}`} className="flex-shrink-0 px-8 flex items-center justify-center">
+          {brands.map((logo, idx) => (
+            <div key={`second-${logo.id || idx}`} className="flex-shrink-0 px-8 flex items-center justify-center">
               <div className="w-48">
                 <Image
                   src={logo.image}

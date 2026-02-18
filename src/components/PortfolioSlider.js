@@ -3,47 +3,35 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-export default function PortfolioSlider() {
+export default function PortfolioSlider({ items = [] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
-  const portfolioItems = [
-    { id: 1, name: 'Bribilla', image: '/portfolio/1771242824519-Bribilla.png' },
-    { id: 2, name: 'Winstico', image: '/portfolio/1771242929170-Winstico.png' },
-    { id: 3, name: 'By Amazon', image: '/portfolio/1771242944445-By-Amazon.png' },
-    { id: 4, name: 'Honzuen', image: '/portfolio/1771242961996-HONZUEN.png' },
-    { id: 5, name: 'Winning Beast', image: '/portfolio/1771242981649-Winning-Beast.png' },
-    { id: 6, name: 'Zesty Paw', image: '/portfolio/1771242995204-Zesty-Paw.png' },
-  ];
-
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % portfolioItems.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + portfolioItems.length) % portfolioItems.length);
+    setCurrentIndex((prev) => (prev + 1) % items.length);
   };
 
   // Get visible items (current, previous, and next)
   const getVisibleItems = () => {
-    const items = [];
+    if (items.length === 0) return [];
+    const visibleItems = [];
     for (let i = -2; i <= 2; i++) {
-      const index = (currentIndex + i + portfolioItems.length) % portfolioItems.length;
-      items.push({ ...portfolioItems[index], position: i });
+      const index = (currentIndex + i + items.length) % items.length;
+      visibleItems.push({ ...items[index], position: i });
     }
-    return items;
+    return visibleItems;
   };
 
   // Auto-slide effect
   useEffect(() => {
-    if (isPaused) return;
+    if (isPaused || items.length === 0) return;
 
     const interval = setInterval(() => {
       nextSlide();
     }, 3000); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
-  }, [currentIndex, isPaused]);
+  }, [currentIndex, isPaused, items.length]);
 
   return (
     <section className="py-20 bg-gray-900 w-full overflow-hidden">
