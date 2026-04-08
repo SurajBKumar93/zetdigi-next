@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* Meta Pixel Code */}
-          <script>
+        <script>
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -33,18 +33,23 @@ export default function RootLayout({ children }) {
             fbq('init', '1202139875450660');
             fbq('track', 'PageView');
           `}
-          </script>
-          <noscript><img height="1" width="1" style="display:none"
-          src="https://www.facebook.com/tr?id=1202139875450660&ev=PageView&noscript=1"
-          /></noscript>
-          {/* End Meta Pixel Code */}
-        {/* Aggressive preloading for Calendly - instant load */}
+        </script>
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1202139875450660&ev=PageView&noscript=1" />`,
+          }}
+        />
+        {/* End Meta Pixel Code */}
+
         {/* favicon */}
         <link rel="icon" href="/icon.png" />
+
+        {/* Aggressive preloading for Calendly - instant load */}
         <link rel="preconnect" href="https://calendly.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://assets.calendly.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://calendly.com" />
         <link rel="dns-prefetch" href="https://assets.calendly.com" />
+
         {/* Preload Calendly iframe */}
         <link
           rel="preload"
