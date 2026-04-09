@@ -19,6 +19,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z70N9BEFTX"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Z70N9BEFTX');
+          `}
+        </script>
+        {/* End Google Analytics */}
+
         {/* Meta Pixel Code */}
         <script>
           {`
