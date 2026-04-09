@@ -3,11 +3,28 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
+  const pathname = usePathname();
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+
+  const handleScrollToCalendly = (e) => {
+    e.preventDefault();
+    
+    if (pathname === '/') {
+      // Already on home page, just scroll to section
+      const element = document.getElementById('clanderly');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Navigate to home page with hash
+      window.location.href = '/#clanderly';
+    }
+  };
 
   // Close dropdowns when clicking outside
   useEffect(() => {
@@ -120,9 +137,13 @@ export default function Navigation() {
           </div>
 
           {/* CTA Button - Desktop */}
-          <Link href="#clanderly" className="hidden lg:block bg-gray-900 text-white px-6 xl:px-8 py-3 rounded-full hover:bg-gray-800 transition font-medium shadow-lg text-sm xl:text-base">
+          <a 
+            href="/#clanderly" 
+            onClick={handleScrollToCalendly}
+            className="hidden lg:block bg-gray-900 text-white px-6 xl:px-8 py-3 rounded-full hover:bg-gray-800 transition font-medium shadow-lg text-sm xl:text-base"
+          >
             Start a Project
-          </Link>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -252,12 +273,16 @@ export default function Navigation() {
 
           {/* Mobile CTA Button */}
           <div className="p-4 border-t border-gray-200 mt-4">
-            <button
-              onClick={closeMobileMenu}
-              className="w-full bg-gray-900 text-white px-6 py-3 rounded-full hover:bg-gray-800 transition font-medium shadow-lg"
+            <a
+              href="/#clanderly"
+              onClick={(e) => {
+                handleScrollToCalendly(e);
+                closeMobileMenu();
+              }}
+              className="block w-full bg-gray-900 text-white px-6 py-3 rounded-full hover:bg-gray-800 transition font-medium shadow-lg text-center"
             >
               Start a Project
-            </button>
+            </a>
           </div>
         </div>
       </div>

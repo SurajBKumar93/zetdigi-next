@@ -7,6 +7,7 @@ import HeroSlider from '@/components/HeroSlider';
 import FeaturesGrid from '@/components/FeaturesGrid';
 import ServicesAndHowItWorks from '@/components/ServicesAndHowItWorks';
 import Footer from '@/components/Footer';
+import ScrollToHash from '@/components/ScrollToHash';
 
 // Non-critical components - lazy loaded for better performance
 const SuccessStories = dynamic(() => import('@/components/SuccessStories'), { ssr: true });
@@ -25,6 +26,7 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-white">
+      <ScrollToHash />
       <Navigation data={pageData.navigation} />
       <HeroSlider slides={pageData.hero.slides} />
       <FeaturesGrid features={pageData.features.features} />

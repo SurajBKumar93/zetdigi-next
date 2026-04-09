@@ -1,7 +1,61 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
+  const [newsletterEmail, setNewsletterEmail] = useState('');
+  const [isSubmittingNewsletter, setIsSubmittingNewsletter] = useState(false);
+  const [newsletterStatus, setNewsletterStatus] = useState(null);
+
+  const handleNewsletterSubmit = async (event) => {
+    event.preventDefault();
+
+    const email = newsletterEmail.trim().toLowerCase();
+    if (!email) {
+      setNewsletterStatus({
+        type: 'error',
+        message: 'Please enter your email address.'
+      });
+      return;
+    }
+
+    setIsSubmittingNewsletter(true);
+    setNewsletterStatus(null);
+
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          email,
+          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || 'Unknown'
+        })
+      });
+
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        throw new Error(result.error || 'Unable to subscribe right now. Please try again.');
+      }
+
+      setNewsletterEmail('');
+      setNewsletterStatus({
+        type: 'success',
+        message: 'Thanks for subscribing.'
+      });
+    } catch (error) {
+      setNewsletterStatus({
+        type: 'error',
+        message: error.message || 'Unable to subscribe right now. Please try again.'
+      });
+    } finally {
+      setIsSubmittingNewsletter(false);
+    }
+  };
+
   return (
     <footer className="bg-gray-800 text-white py-12 md:py-16">
       <div className="container-custom mx-auto px-4 sm:px-6">
@@ -64,16 +118,33 @@ export default function Footer() {
             <p className="text-gray-300 text-sm mb-6">Subscribe to receive updates, exclusive offers, and gemstone tips.</p>
 
             {/* Email Input */}
-            <div className="space-y-4">
+            <form onSubmit={handleNewsletterSubmit} className="space-y-4">
               <input
                 type="email"
+                name="newsletterEmail"
+                value={newsletterEmail}
+                onChange={(event) => setNewsletterEmail(event.target.value)}
                 placeholder="Your email address"
+                required
+                disabled={isSubmittingNewsletter}
                 className="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition text-sm"
               />
-              <button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition text-sm">
-                Subscribe
+              <button
+                type="submit"
+                disabled={isSubmittingNewsletter}
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition text-sm disabled:opacity-60 disabled:cursor-not-allowed"
+              >
+                {isSubmittingNewsletter ? 'Subscribing...' : 'Subscribe'}
               </button>
-            </div>
+              {newsletterStatus && (
+                <p
+                  className={`text-sm ${newsletterStatus.type === 'success' ? 'text-green-300' : 'text-red-300'}`}
+                  role="status"
+                >
+                  {newsletterStatus.message}
+                </p>
+              )}
+            </form>
 
             {/* Social Media Icons */}
             <div className="flex gap-3 mt-6">

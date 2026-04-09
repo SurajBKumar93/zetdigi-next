@@ -5,17 +5,20 @@ import Image from 'next/image';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
+const initialFormData = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  phone: '',
+  service: '',
+  message: ''
+};
+
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    service: '',
-    message: ''
-  });
+  const [formData, setFormData] = useState(initialFormData);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+  const [submitMessage, setSubmitMessage] = useState('');
 
   const handleChange = (e) => {
     setFormData({
@@ -27,15 +30,39 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus(null);
+    setSubmitMessage('');
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          ...formData,
+          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || 'Unknown'
+        })
+      });
+
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        throw new Error(result.error || 'Unable to submit right now. Please try again.');
+      }
+
       setSubmitStatus('success');
-      setFormData({ firstName: '', lastName: '', email: '', phone: '', service: '', message: '' });
-
-      setTimeout(() => setSubmitStatus(null), 5000);
-    }, 1500);
+      setSubmitMessage('Our team will contact you within 24 hours with your free audit.');
+      setFormData(initialFormData);
+    } catch (error) {
+      setSubmitStatus('error');
+      setSubmitMessage(error.message || 'Unable to submit right now. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+      setTimeout(() => {
+        setSubmitStatus(null);
+        setSubmitMessage('');
+      }, 5000);
+    }
   };
 
   return (
@@ -170,8 +197,20 @@ export default function Contact() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <div>
-                    <p className="font-semibold">Request received! 🎉</p>
-                    <p className="text-sm">Our team will contact you within 24 hours with your free audit.</p>
+                    <p className="font-semibold">Request received!</p>
+                    <p className="text-sm">{submitMessage}</p>
+                  </div>
+                </div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div className="bg-red-50 border border-red-200 text-red-800 px-6 py-4 rounded-xl mb-6 flex items-start gap-3">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M4.93 19.07A10 10 0 1119.07 4.93 10 10 0 014.93 19.07z" />
+                  </svg>
+                  <div>
+                    <p className="font-semibold">Submission failed</p>
+                    <p className="text-sm">{submitMessage}</p>
                   </div>
                 </div>
               )}
@@ -294,3 +333,4 @@ export default function Contact() {
     </div>
   );
 }
+
