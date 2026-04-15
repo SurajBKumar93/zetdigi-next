@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
         </script>
         <noscript
           dangerouslySetInnerHTML={{
-            __html: `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1202139875450660&ev=PageView&noscript=1" />`,
+            __html: `<img height="1" width="1" style={{display: 'none', visibility: 'hidden'}} src="https://www.facebook.com/tr?id=1202139875450660&ev=PageView&noscript=1" />`,
           }}
         />
         {/* End Meta Pixel Code */}
