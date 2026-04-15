@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
         </script>
         <noscript
           dangerouslySetInnerHTML={{
-            __html: `<img height="1" width="1" style={{display: 'none', visibility: 'hidden'}} src="https://www.facebook.com/tr?id=1202139875450660&ev=PageView&noscript=1" />`,
+            __html: `<img height="1" width="1" style="display: none; visibility: hidden;" src="https://www.facebook.com/tr?id=1202139875450660&ev=PageView&noscript=1" />`,
           }}
         />
         {/* End Meta Pixel Code */}
@@ -77,7 +77,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={`${hankenGrotesk.variable} antialiased`}>
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGRF2HXN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGRF2HXN" height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
         <Providers>{children}</Providers>
       </body>
     </html>
