@@ -1,3 +1,8 @@
+'use client';
+
+import { useState } from 'react';
+import Image from 'next/image';
+
 const serviceOptions = [
   { value: 'keyword-research', label: 'Keyword Research' },
   { value: 'packaging-design', label: 'Packaging Design' },
@@ -43,12 +48,68 @@ export function ServiceCtaBand({ title, description, buttonText }) {
   );
 }
 
-import Image from 'next/image';
-
-// Default contact image used across all service pages
 const DEFAULT_CONTACT_IMAGE = '/uploads/services/1771211286839-Slide-2.jpg';
 
+const initialFormData = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  phone: '',
+  service: '',
+  message: ''
+};
+
 export function ServiceContactSection({ defaultService = '' }) {
+  const [formData, setFormData] = useState(initialFormData);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+  const [submitMessage, setSubmitMessage] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+    setSubmitMessage('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          ...formData,
+          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || 'Unknown'
+        })
+      });
+
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        throw new Error(result.error || 'Unable to submit right now. Please try again.');
+      }
+
+      setSubmitStatus('success');
+      setSubmitMessage('Our team will contact you within 24 hours with your free audit.');
+      setFormData(initialFormData);
+    } catch (error) {
+      setSubmitStatus('error');
+      setSubmitMessage(error.message || 'Unable to submit right now. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+      setTimeout(() => {
+        setSubmitStatus(null);
+        setSubmitMessage('');
+      }, 5000);
+    }
+  };
+
   return (
     <section className="bg-gray-50 py-16 md:py-20">
       <div className="container-custom">
@@ -69,16 +130,78 @@ export function ServiceContactSection({ defaultService = '' }) {
             <VisualPlaceholder label="Contact Image Placeholder" className="min-h-[420px]" />
           )}
 
-          <form className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <form onSubmit={handleSubmit} className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+            {submitStatus === 'success' && (
+              <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg mb-4 flex items-start gap-3">
+                <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div>
+                  <p className="font-semibold text-sm">Request received!</p>
+                  <p className="text-xs">{submitMessage}</p>
+                </div>
+              </div>
+            )}
+
+            {submitStatus === 'error' && (
+              <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg mb-4 flex items-start gap-3">
+                <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M4.93 19.07A10 10 0 1119.07 4.93 10 10 0 014.93 19.07z" />
+                </svg>
+                <div>
+                  <p className="font-semibold text-sm">Submission failed</p>
+                  <p className="text-xs">{submitMessage}</p>
+                </div>
+              </div>
+            )}
+
             <div className="grid gap-4 sm:grid-cols-2">
-              <input className="rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100" placeholder="First Name" type="text" />
-              <input className="rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100" placeholder="Last Name" type="text" />
+              <input
+                type="text"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
+                required
+                className="rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                placeholder="First Name"
+              />
+              <input
+                type="text"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                required
+                className="rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                placeholder="Last Name"
+              />
             </div>
-            <input className="mt-4 w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100" placeholder="Email Address" type="email" />
-            <input className="mt-4 w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100" placeholder="Phone Number" type="tel" />
+
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className="mt-4 w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+              placeholder="Email Address"
+            />
+
+            <input
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+              className="mt-4 w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+              placeholder="Phone Number"
+            />
+
             <select
+              name="service"
+              value={formData.service}
+              onChange={handleChange}
+              required
               className="mt-4 w-full rounded-lg border border-gray-200 px-4 py-3 text-sm text-gray-600 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
-              defaultValue={defaultService}
             >
               <option value="" disabled>Select Services</option>
               {serviceOptions.map((option) => (
@@ -87,9 +210,33 @@ export function ServiceContactSection({ defaultService = '' }) {
                 </option>
               ))}
             </select>
-            <textarea className="mt-4 w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100" placeholder="Your Message" rows={6} />
-            <button className="mt-5 rounded-full bg-blue-700 px-7 py-3 text-sm font-semibold text-white transition hover:bg-blue-800" type="button">
-              Submit Form
+
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+              rows={4}
+              className="mt-4 w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100 resize-none"
+              placeholder="Your Message"
+            />
+
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="mt-5 w-full rounded-full bg-blue-700 px-7 py-3 text-sm font-semibold text-white transition hover:bg-blue-800 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+            >
+              {isSubmitting ? (
+                <>
+                  <svg className="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  Submitting...
+                </>
+              ) : (
+                'Submit Form'
+              )}
             </button>
           </form>
         </div>
